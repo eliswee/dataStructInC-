@@ -13,11 +13,12 @@
 #include "bubbleSort/BubbleSort.h"
 #include "MergeSort.h"
 #include "practice.h"
+#include "QuickSort.h"
 
 void test();
 
 int main(int argc, const char * argv[]) {
-    test();
+//    test();
     return 0;
 }
 

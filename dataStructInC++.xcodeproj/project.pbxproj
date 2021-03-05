@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		577A86CA25E899CF00BB5B14 /* practice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = practice.h; sourceTree = "<group>"; };
+		577A870325F1C90A00BB5B14 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		577CF30825DE59D700F6F579 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		577CF30B25DE5F9C00F6F579 /* SelectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionSort.h; sourceTree = "<group>"; };
 		577CF30D25DE604000F6F579 /* SortTestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortTestHelper.h; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		5785312425DDF1A7007832B5 /* dataStructInC++ */ = {
 			isa = PBXGroup;
 			children = (
+				577A870325F1C90A00BB5B14 /* QuickSort.h */,
 				578977CD25E52BDC007D8E53 /* MergeSort.h */,
 				577CF31225DFA22500F6F579 /* bubbleSort */,
 				577CF30F25DE670D00F6F579 /* insertionSort */,

@@ -8,6 +8,14 @@
 #ifndef MergeSort_h
 #define MergeSort_h
 
+
+/*
+ 归并的两种方式：
+    自顶向下：递归
+    自底向上：迭代。没有使用随机访问特性，可以对链表进行nlogn排序
+ 为什么第一种比第二种快？
+ */
+
 // 将arr[l...mid] 和 arr[mid+1...r]两部分进行归并
 template<typename T>
 void __merge(T arr[], int l , int mid, int r) {
@@ -52,6 +60,7 @@ void __mergeSort(T arr[], int l, int r ) {
 // 优化：
 // 1.当mid之前和之后无交叉元素代表已经有序，不进行merge.
 // 2.当区间范围小到一定程度时，区间内元素大概率有序，可以使用插入排序
+// 3.数据规模比较小的时候算法复杂度的常数系数作用比较大
 template<typename T>
 void __mergeSort_1(T arr[], int l, int r ) {
     
@@ -68,6 +77,15 @@ void __mergeSort_1(T arr[], int l, int r ) {
     // 对于近乎有序的数组非常有效,但是对于一般情况,由于多了一次if，有一定的性能损失
     if (arr[mid] > arr[mid + 1]) {
         __merge(arr, l, mid, r);
+    }
+}
+
+template<typename  T>
+void mergeSortBU(T arr[], int n) {
+    for ( int sz = 1; sz < n; sz += sz ) {
+        for (int i = 0; <#condition#>; <#increment#>) {
+            <#statements#>
+        }
     }
 }
 
